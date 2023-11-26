@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './styles/MissionCard.css';
 
 class MissionCard extends React.Component {
   render() {
@@ -9,11 +10,32 @@ class MissionCard extends React.Component {
     const { destination } = this.props;
 
     return (
-      <div data-testid="mission-card">
-        <p data-testid="mission-name">{ name }</p>
-        <p data-testid="mission-year">{ year }</p>
-        <p data-testid="mission-country">{ country }</p>
-        <p data-testid="mission-destination">{ destination }</p>
+      <div className="Mission-card-content" data-testid="mission-card">
+        <p
+          className="Mission-card-name"
+          data-testid="mission-name"
+        >
+          { name }
+        </p>
+        <p
+          className="Mission-card-year"
+          data-testid="mission-year"
+        >
+          { year }
+        </p>
+        <p
+          className="Mission-card-country"
+          data-testid="mission-country"
+        >
+          { country }
+        </p>
+        <p
+          className="Mission-card-destination"
+          data-testid="mission-destination"
+        >
+          { destination }
+        </p>
+        <hr style={ { gridArea: 'line' } } />
       </div>
     );
   }

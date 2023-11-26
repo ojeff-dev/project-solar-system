@@ -1,0 +1,33 @@
+.Mission-card-content {
+  background-color: rgba(24, 26, 37, 0.5);
+  border: 1px solid white;
+  border-radius: 17px;
+  display: grid;
+  grid-template: 96px 1px 96px / 80px 1fr 160px;
+  grid-template-areas: 'name name name' 'line line line' 'year country destination';
+}
+
+.Mission-card-name {
+  font-size: 28px;
+  grid-area: name;
+  margin: auto 0;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.Mission-card-year {
+  grid-area: year;
+  margin: auto 0;
+  padding-left: 20px;
+}
+
+.Mission-card-country {
+  grid-area: country;
+  margin: auto 0;
+}
+
+.Mission-card-destination {
+  grid-area: destination;
+  margin: auto 0;
+  padding-right: 20px;
+}

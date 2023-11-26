@@ -1,0 +1,12 @@
+.Missions-section {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  margin: 150px 40px 20px;
+  padding: 43px;
+}
+
+.Missions-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
